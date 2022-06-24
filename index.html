@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <button class="start-button" id="start">Start</button>
+    <div class="hide" id="loader"></div>
+    <div class="mode-container hide">
+        <h3>Select Mode </h3>
+        <div class="mode">
+            <button class="mode-selector" >Easy</button>
+            <button class="mode-selector" >Medium</button>
+            <button class="mode-selector" >Hard</button>
+            <button class="mode-selector" >Survival</button>
+        </div>
+    </div>
+    <div class="container hide">
+        <div class="question-container">
+            <div class="question-box">Question</div>
+            <div class="answer-box">
+                <button class="answer" id="btn1">Answer 1</button>
+                <button class="answer" id="btn2">Answer 2</button>
+                <button class="answer" id="btn3">Answer 3</button>
+                <button class="answer" id="btn4">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button class="next-button hide" id="next">Next</button>
+        </div>
+    </div>
+    <div class="game-over hide">
+        <div id="game-over-text">Game Over! 😔</div>
+        <button id="game-over-btn">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
